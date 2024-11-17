@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Әкеңнің Туған Күні</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #f6d365, #fda085);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .card {
+            background: rgba(255, 250, 240, 0.9); 
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border-radius: 15px;
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .card h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            color: #ff6347;
+            animation: fadeInDown 1.5s ease;
+        }
+        .card p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            background: rgba(246, 211, 101, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            animation: fadeInUp 1.5s ease;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Әке, Туған күніңмен!</h1>
+        <img src="img/sss.jpg" alt="Аке фото">
+        <p>Сіз ең керемет әке, біз сізді өте жақсы көреміз және сізге ұзақ өмір мен бақыт тілейміз! Сіздің ақылыңыз бен мейірімділігіңіз бізді әрқашан шабыттандырады. Бұл ерекше күні біз сізге барлық жақсы нәрселерді, денсаулық пен молшылық тілейміз. Әрбір күніңіз қуанышқа, махаббатқа және бақытқа толы болсын. Сіз біз үшін үлкен мақтанышсыз және әрдайым жүрегімізде ерекше орын аласыз.</p>
+        <div class="footer">
+            <p>© 2024</p>
+        </div>
+    </div>
+</body>
+</html>
